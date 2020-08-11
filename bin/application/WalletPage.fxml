@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="736.0" prefWidth="600.0" style="-fx-background-color: rgba(33,46,58,1);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WalletPageController">
+   <children>
+      <Label fx:id="available_bal" alignment="CENTER" layoutX="223.0" layoutY="405.0" prefHeight="52.0" prefWidth="154.0" text="0" textFill="WHITE" />
+      <Button fx:id="add_money" layoutX="95.0" layoutY="591.0" mnemonicParsing="false" onAction="#add_money" prefHeight="31.0" prefWidth="138.0" style="-fx-background-color: rgba(9,158,134,1);" text="Add Money" textFill="WHITE" />
+      <TextField fx:id="add_amt" layoutX="70.0" layoutY="520.0" promptText="Rs. " AnchorPane.leftAnchor="70.0" />
+      <Button fx:id="show_available_bal" layoutX="211.0" layoutY="353.0" mnemonicParsing="false" onAction="#showAvailableBalance" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: rgba(9,158,134,1);" text="Show Available Balance" textFill="WHITE" />
+      <TextField fx:id="remove_amt" layoutX="342.0" layoutY="520.0" promptText="Rs." AnchorPane.rightAnchor="71.0" />
+      <Button fx:id="remove_money" layoutX="367.0" layoutY="591.0" mnemonicParsing="false" onAction="#remove_money" prefHeight="31.0" prefWidth="138.0" style="-fx-background-color: rgba(9,158,134,1);" text="Remove Money" textFill="WHITE" />
+      <Label fx:id="warning1" layoutX="68.0" layoutY="551.0" prefHeight="21.0" prefWidth="223.0" textFill="RED" />
+      <Label fx:id="warning2" alignment="CENTER" layoutX="305.0" layoutY="551.0" prefHeight="21.0" prefWidth="263.0" textFill="RED" />
+      <ImageView fitHeight="223.0" fitWidth="266.0" layoutX="192.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/pngtree-cash-withdrawal-icon-png-image_3700442.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

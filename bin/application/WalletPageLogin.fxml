@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="736.0" prefWidth="600.0" style="-fx-background-color: rgba(33,46,58,1);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WalletPageLoginController">
+   <children>
+      <TextField fx:id="user_id" layoutX="207.0" layoutY="439.0" promptText="User ID" style="-fx-background-radius: 30;" />
+      <PasswordField fx:id="wallet_pin" layoutX="207.0" layoutY="498.0" promptText="4 Digit Wallet Pin" style="-fx-background-radius: 30;" />
+      <Button fx:id="continuer" layoutX="260.0" layoutY="612.0" mnemonicParsing="false" onAction="#continues" style="-fx-background-color: rgba(9,158,134,1); -fx-background-radius: 5;" text="Continue" textFill="WHITE" />
+      <Label fx:id="wrong_input" layoutX="207.0" layoutY="529.0" prefHeight="21.0" prefWidth="217.0" textFill="#f50707" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="176.0" />
+      <ImageView fitHeight="175.0" fitWidth="180.0" layoutX="207.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/wallet1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
